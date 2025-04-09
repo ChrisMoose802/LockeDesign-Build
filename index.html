@@ -1,0 +1,93 @@
+<!-- ...existing code... -->
+<header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; display: flex; justify-content: center; align-items: center; padding: 10px; background-color: #f4f4f4; border-bottom: 1px solid #ccc;">
+    <div style="position: absolute; left: 10px; display: flex; align-items: center;">
+        <img src="transparentlogo.png" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;">
+        <h1 style="margin: 0; font-size: 24px; font-weight: bold;">Locke Design & Build</h1>
+    </div>
+    <nav>
+        <a href="#home" style="margin-right: 15px; text-decoration: none; color: #000;">Home</a>
+        <a href="#services" style="margin-right: 15px; text-decoration: none; color: #000;">Services</a>
+        <a href="#about" style="margin-right: 15px; text-decoration: none; color: #000;">About</a>
+        <a href="#contact" style="text-decoration: none; color: #000;">Contact</a>
+    </nav>
+</header>
+<!-- Add padding to the top of the page to account for the fixed header -->
+<div style="padding-top: 60px;"></div>
+<section id="home" style="position: relative; height: 33vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background-color: #eaeaea; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 100%; background-image: url('house-silhouette.png'); background-size: cover; background-position: center; opacity: 0.1;"></div>
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.5; z-index: 0;">
+        <img src="transparentlogo.png" alt="Background Logo" style="width: 400px; height: auto;">
+    </div>
+    <div style="position: relative; z-index: 1;">
+        <h2 style="font-size: 36px; font-weight: bold; margin: 0;">We Make Your Dreams Come True</h2>
+        <p style="font-size: 18px; margin: 10px 0;">Expert Land and Home Improvement Services in Canton, NY</p>
+        <button onclick="location.href='#contact'" style="margin-top: 20px; padding: 10px 20px; font-size: 16px; border: none; border-radius: 20px; background-color: #007BFF; color: #fff; cursor: pointer;">Get a Quote</button>
+    </div>
+    <div style="position: absolute; top: 50%; left: 16.66%; transform: translate(-50%, -50%);">
+        <img src="projects/projectL26.jpeg" alt="Project Left" style="width: 262.5px; height: auto; border-radius: 5px;">
+    </div>
+    <div style="position: absolute; top: 50%; right: 16.66%; transform: translate(50%, -50%);">
+        <img src="projects/projectF18.jpeg" alt="Project Right" style="width: 262.5px; height: auto; border-radius: 5px;">
+    </div>
+</section>
+<section id="services" style="display: flex; justify-content: space-between; padding: 20px; background-color: #f9f9f9;">
+    <div style="flex: 1; margin: 10px; padding: 20px; background-color: #fff; border: 2px solid #ccc; border-radius: 5px; position: relative; text-align: center;">
+        <div style="border: 2px solid #000; padding: 5px; display: inline-block; margin-bottom: 10px; border-radius: 10px;">
+            <h3 style="margin: 0; font-size: 20px; font-weight: bold;">Concrete Work</h3>
+        </div>
+        <p style="margin-top: 10px; font-size: 14px; text-decoration: underline;">Durable Foundations</p>
+        <img src="projects/projectC4.jpeg" alt="Concrete Work" style="width: 100%; height: auto; margin-top: 10px; border-radius: 5px;">
+    </div>
+    <div style="flex: 1; margin: 10px; padding: 20px; background-color: #fff; border: 2px solid #ccc; border-radius: 5px; position: relative; text-align: center;">
+        <div style="border: 2px solid #000; padding: 5px; display: inline-block; margin-bottom: 10px; border-radius: 10px;">
+            <h3 style="margin: 0; font-size: 20px; font-weight: bold;">Kitchen and Bath</h3>
+        </div>
+        <p style="margin-top: 10px; font-size: 14px; text-decoration: underline;">Modern Remodels and Design</p>
+        <img src="projects/projectM2.jpeg" alt="Kitchen and Bath" style="width: 100%; height: auto; margin-top: 40px; border-radius: 5px;">
+    </div>
+    <div style="flex: 1; margin: 10px; padding: 20px; background-color: #fff; border: 2px solid #ccc; border-radius: 5px; position: relative; text-align: center;">
+        <div style="border: 2px solid #000; padding: 5px; display: inline-block; margin-bottom: 10px; border-radius: 10px;">
+            <h3 style="margin: 0; font-size: 20px; font-weight: bold;">Construction</h3>
+        </div>
+        <p style="margin-top: 10px; font-size: 14px; text-decoration: underline;">Additions and New Builds</p>
+        <img src="projects/projectA8.jpeg" alt="Construction" style="width: 100%; height: auto; margin-top: 40px; border-radius: 5px;">
+    </div>
+    <div style="flex: 1; margin: 10px; padding: 20px; background-color: #fff; border: 2px solid #ccc; border-radius: 5px; position: relative; text-align: center;">
+        <div style="border: 2px solid #000; padding: 5px; display: inline-block; margin-bottom: 10px; border-radius: 10px;">
+            <h3 style="margin: 0; font-size: 20px; font-weight: bold;">Flooring and Tile</h3>
+        </div>
+        <p style="margin-top: 10px; font-size: 14px; text-decoration: underline;">Quality Installs</p>
+        <img src="projects/projectM5.jpeg" alt="Flooring and Tile" style="width: 100%; height: auto; margin-top: 10px; border-radius: 5px;">
+    </div>
+</section>
+<section id="about" style="display: flex; align-items: center; padding: 20px; background-color: #f4f4f4;">
+    <div style="flex: 1; padding: 20px; text-align: center;">
+        <h2 style="font-size: 24px; font-weight: bold; margin: 0;">About Us</h2>
+        <p style="margin-top: 10px; font-size: 16px;">Led by Tyler Locke, over 10 years of craftsmanship in Canton, NY.</p>
+        <p style="margin-top: 20px; padding: 15px; font-size: 14px; background-color: #fff; border: 2px solid #ccc; border-radius: 10px;">
+            At Locke Design and Build, we are a trusted full-service construction company dedicated to bringing your vision to life. With over a decade of experience, we specialize in residential and commercial projects, offering a comprehensive range of services from concrete contracting to kitchen and bathroom remodeling, flooring, painting, and more. Our team of skilled professionals is committed to delivering exceptional workmanship and ensuring every project is completed with precision and care. Whether you're dreaming of a new home, a complete renovation, or a commercial build, we work closely with you from design to completion to exceed your expectations. Let us help you build something extraordinary.
+        </p>
+    </div>
+    <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <img src="projects/projectF15.jpeg" alt="About Us Image" style="width: 90%; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+    </div>
+</section>
+<section id="contact" style="padding: 20px; background-color: #eaeaea; text-align: center;">
+    <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Contact Us</h2>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <span>Phone: (315) 714-2567</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <span>Email: info@lockdesignbuild.com</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="facebookicon.png" alt="Facebook Icon" style="width: 20px; height: 20px;">
+            <span>Facebook: @lockedesignbuild</span>
+        </div>
+    </div>
+</section>
+<footer style="padding: 10px; background-color: #f4f4f4; text-align: center; font-size: 12px; color: #666; border-top: 1px solid #ddd;">
+    <p style="margin: 0;">© 2025 Locke Design & Build. All rights reserved.</p>
+</footer>
+<!-- ...existing code... -->

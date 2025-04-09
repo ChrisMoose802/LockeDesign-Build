@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected</title>
+    <script>
+        function validatePassword(event) {
+            event.preventDefault();
+            const password = document.getElementById('password').value;
+            if (password === 'LockeDesign') {
+                window.location.href = 'index.html';
+            } else {
+                alert('Wrong Password');
+                document.getElementById('password-form').reset();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f4f4;">
+        <h1 style="margin-bottom: 20px;">Enter Password</h1>
+        <form id="password-form" onsubmit="validatePassword(event)" style="display: flex; flex-direction: column; align-items: center;">
+            <input type="password" id="password" placeholder="Password" required style="padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
